@@ -1,0 +1,118 @@
+/* General Navbar Styling */
+.custom-navbar {
+    background-color: #333; /* Dark background */
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    font-family: 'Poppins', sans-serif;
+    justify-content: flex-end; /* Align all content to the right */
+    
+}
+
+.navbar-brand {
+    display: flex;
+    align-items: center;
+    margin-right: 30px; /* Space between logo and nav items */
+}
+
+.nav-logo {
+    display: flex;
+    align-items: center;
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.logo-text {
+    margin-left: 10px;
+    color: #ff5722;
+    font-size: 1.3rem;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+/* Nav Items Styling */
+.nav-items {
+    display: flex;
+    align-items: center; /* Center items vertically */
+}
+
+.nav-items .nav-link {
+    color: #fff;
+    font-size: 1rem;
+    margin-left: 20px;
+    padding: 5px 10px;
+    text-transform: uppercase;
+    font-weight: 500;
+    transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+.nav-items .nav-link:hover {
+    color: #ff5722;
+    background-color: rgba(255, 87, 34, 0.1);
+    border-radius: 5px;
+}
+
+.nav-items .nav-link.active {
+    color: #ff5722;
+}
+
+/* Help Section */
+.help-section {
+    display: flex;
+    align-items: center;
+    color: #fff;
+    margin-left: 30px;
+    font-size: 0.9rem;
+}
+
+.help-section img {
+    margin-right: 10px;
+}
+
+.help-section span {
+    line-height: 1.2;
+}
+
+.help-section span br {
+    display: block;
+}
+
+/* Navbar Responsive Styling */
+@media (max-width: 992px) {
+    .help-section {
+        margin-left: 0;
+        margin-top: 15px;
+        justify-content: center;
+    }
+
+    .navbar-brand,
+    .nav-items {
+        width: 100%;
+        justify-content: flex-end; /* Align everything to the right on small screens */
+    }
+
+    .nav-items {
+        margin-top: 15px;
+    }
+}
+
+@media (max-width: 576px) {
+    .nav-logo img {
+        width: 25px;
+        height: 25px;
+    }
+
+    .logo-text {
+        font-size: 1.1rem;
+    }
+
+    .nav-items .nav-link {
+        font-size: 0.9rem;
+        margin-left: 10px;
+    }
+
+    .help-section {
+        font-size: 0.8rem;
+    }
+}

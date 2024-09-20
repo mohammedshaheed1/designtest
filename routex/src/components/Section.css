@@ -1,0 +1,80 @@
+/* Google Font Import */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+.hero-section {
+  background-image: url('https://images.unsplash.com/photo-1726564594505-52d6ace52710?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHw3fHx8ZW58MHx8fHx8'); 
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  font-family: 'Poppins', sans-serif;
+}
+
+.hero-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6); /* Darker overlay for readability */
+  z-index: 0;
+}
+
+.container {
+  position: relative;
+  z-index: 1; 
+}
+
+.title {
+  font-size: 3rem;
+  font-weight: 600;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7); /* Subtle shadow for better contrast */
+}
+
+.description {
+  margin-top: 20px;
+  font-size: 1.2rem;
+  text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.5);
+}
+
+.text-white {
+  color: #fff;
+}
+
+.btn-custom {
+  background-color: #ff5722; /* Vibrant color for button */
+  color: #fff;
+  padding: 10px 30px;
+  border-radius: 25px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  border: none;
+  margin-top: 30px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn-custom:hover {
+  background-color: #e64a19;
+  transform: translateY(-2px); /* Subtle lift effect */
+}
+
+@media (max-width: 768px) {
+  .title {
+    font-size: 2.5rem;
+  }
+
+  .description {
+    font-size: 1rem;
+  }
+
+  .btn-custom {
+    font-size: 1rem;
+    padding: 8px 25px;
+  }
+}
